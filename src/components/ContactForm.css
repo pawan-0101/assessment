@@ -1,0 +1,125 @@
+/* ContactForm.css */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+
+/* Mobile View - 480p */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Tablet View - 720p and 1080p */
+@media (min-width: 481px) and (max-width: 1080px) {
+  .contact-form {
+    max-width: 600px;
+  }
+}
+
+/* iPad View - 2732x2048 */
+@media (min-width: 2000px) {
+  .contact-form {
+    max-width: 800px;
+    padding: 60px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+/* MacBook View - 1440x823 */
+@media (min-width: 1440px) {
+  .contact-form {
+    max-width: 700px;
+  }
+}
